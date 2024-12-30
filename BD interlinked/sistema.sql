@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-12-2024 a las 22:44:59
+-- Tiempo de generación: 30-12-2024 a las 23:56:39
 -- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Versión de PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -6276,7 +6276,7 @@ CREATE TABLE `pf` (
 --
 
 INSERT INTO `pf` (`id`, `nombres`, `apellidos`, `codigoPF`, `password`, `genero`, `federacion`, `carnet`, `ciudad`, `numeroPF`) VALUES
-(1, 'LEONARDO', 'NAVI MORALES', 'RX3YWM93YP', '$2y$10$9EV.SBXmm6MTb9ErSvL9H.ockyLToFznu.8n.EvbkO6fTad62Q4A6', 'Masculino', '1era-federación', '5580518', 'RIBERALTA', '1');
+(1, 'LEONARDO', 'NAVI MORALES', 'RX3YWM93YP', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '4349', 'RIBERALTA', '1');
 
 -- --------------------------------------------------------
 
@@ -6302,10 +6302,10 @@ CREATE TABLE `presidentes` (
 --
 
 INSERT INTO `presidentes` (`id`, `nombres`, `apellidos`, `codigoPS`, `password`, `genero`, `federaciones`, `carnet`, `sindicato`, `numeroPS`) VALUES
-(1, 'AXEL YIN', 'CARTAGENA APAZA', '6PKWLE3C3M', '$2y$10$oD1JpqGcK2Nfn8BOllsE4uswT0ZbSx0kWtKL9.j5lapLnKwYPQXqi', 'Masculino', '1era-federación', '10848352', 'VILLA NORITA', '1'),
-(2, 'A', 'A', 'KFWXK3W6PP', '$2y$10$s00qJTN2cUhBG7ZZJTf1Tu9wxMC0jOkKZIKiyiJPdGerT0xz27RK2', 'Masculino', '1era-federación', '12346', 'CERRITO', '2'),
-(3, 'S', 'S', '9F6HWYPNEY', '$2y$10$6MF.jFNn41tw1SjZWJ4w1u1bIDyM5Bv5FZNeBmy1NaRngRpHatuRK', 'Masculino', '1era-federación', '1', '9 DE ABRIL', '3'),
-(4, 'DERT', 'CERFAD', 'LNKYC3X69P', '$2y$10$FSIpgZbT4yuzZGvOExGeweQMqN8FAcCsBXvjgUUvRtS08lelgWvWm', 'Masculino', '1era-federación', '123456789012', 'VILLA AMAZONIA', '4');
+(1, 'AXEL YIN', 'CARTAGENA APAZA', '6PKWLE3C3M', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '9272690', 'VILLA NORITA', '1'),
+(2, 'A', 'A', 'KFWXK3W6PP', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '9272691', 'CERRITO', '2'),
+(3, 'S', 'S', '9F6HWYPNEY', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '9272692', '9 DE ABRIL', '3'),
+(4, 'DERT', 'CERFAD', 'LNKYC3X69P', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '9272693', 'VILLA AMAZONIA', '4');
 
 -- --------------------------------------------------------
 
@@ -6331,17 +6331,17 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombres`, `apellidos`, `codigoA`, `password`, `genero`, `federaciones`, `carnet`, `sindicato`, `numeroA`) VALUES
-(87, 'AXEL MARCELO', 'CARTAGENA APAZA', 'YR3CPFPMPE', '$2y$10$bd7H5aWodwV5y37vozzHS.aej45X6XcU.fxgfKMOn36ytemhgkD06', 'Masculino', '1era-federación', '10848350', 'VILLA NORITA', '1'),
-(88, 'LEONARDO', 'NAVI MORALES', 'XRPCYCRWLX', '$2y$10$bd7H5aWodwV5y37vozzHS.aej45X6XcU.fxgfKMOn36ytemhgkD06', 'Masculino', '1era-federación', '5580518', 'SITMA', '2'),
-(89, 'JUAN CARLO', 'CARPIO', 'H69RXCCMRX', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '9272690', '7 DE AGOSTO', '3'),
-(90, 'ORLANDO ', 'PUERTA PARADA', 'HPRX9LMYK9', '$2y$10$a85x1qwCUV9/A1/F7xnQXuPKHKJRDbsKDyC0m1fd0cPCmbpk8mVJ6', 'Masculino', '1era-federación', '12345678', 'VILLA NORITA', '2'),
-(91, 'KA', 'DESTRIPADOR', 'YKXCNP3HNY', '$2y$10$nnQvdMo8J4F3fcLDG7g8wOCUUzWxZGr/OCic8H1yMiB6y8E3tE3Ri', 'Masculino', '1era-federación', '123456789', 'VILLA NORITA', '2'),
-(92, 'GANSTA', 'DEL MEN', 'NXXNCNFNWF', '$2y$10$wo/Z5zI6BP0aBdo9lPOzWuzuPnpnYZq3Xw/4h4ZjcvRMibLEPRPv6', 'Masculino', '1era-federación', '10848351', 'VILLA NORITA', '4'),
-(93, 'JUAN CARLOS', 'JIMENEZ', '69CWEMYNPM', '$2y$10$tUgLEviDD5KaAIO6xNzTXeX3t3.IDuhbVWRyDIdKiS92ZkbvYdtg2', 'Masculino', '1era-federación', '123', 'VILLA NORITA', '5'),
-(94, 'ANGEL LUIS', 'APAZA', '3PHLRFHNEY', '$2y$10$ys8Xo3XMkdqViyjtoVqVVuugHnH2.39jYJkWNKdRVnAEO6VwjfGl2', 'Masculino', '1era-federación', '1234', 'VILLA NORITA', '6'),
-(95, 'LUIS ', 'MEDINA', 'YF3PLFCKEN', '$2y$10$H7AosYkEoHsuYciOUS6jGeyg2KQmUZM8dn1eSxv2BkQCIVlbRYSbK', 'Masculino', '1era-federación', '1', 'CERRITO', '8'),
-(96, 'XOKAS', 'ESPAÑA', 'EWXCMPEHWL', '$2y$10$jv/jykwDNiCbIhagUwYnqe5hoY4EnBTDQhTm4wZuDdUct0H0mxQ/m', 'Masculino', '1era-federación', '1239', '9 DE ABRIL', '14'),
-(97, 'PEPITO', 'MEDINA', '3EWNKMKF3K', '$2y$10$yLT5XaUB070r5r2Yli0jFuj9e3xAjj0/c00.J4IVQaerw/U1uvWK6', 'Masculino', '1era-federación', '123456789012', '9 DE ABRIL', '2');
+(87, 'A', 'A', 'YR3CPFPMPE', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848350', 'VILLA NORITA', '1'),
+(88, 'B', 'B', 'XRPCYCRWLX', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848351', 'SITMA', '2'),
+(89, 'C', 'C', 'H69RXCCMRX', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848352', '7 DE AGOSTO', '3'),
+(90, 'D', 'D', 'HPRX9LMYK9', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848353', 'VILLA NORITA', '2'),
+(91, 'E', 'E', 'YKXCNP3HNY', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848354', 'VILLA NORITA', '2'),
+(92, 'F', 'F', 'NXXNCNFNWF', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848355', 'VILLA NORITA', '4'),
+(93, 'G', 'G', '69CWEMYNPM', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848356', 'VILLA NORITA', '5'),
+(94, 'H', 'H', '3PHLRFHNEY', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848357', 'VILLA NORITA', '6'),
+(95, 'I', 'I', 'YF3PLFCKEN', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848358', 'CERRITO', '8'),
+(96, 'J', 'J', 'EWXCMPEHWL', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848359', '9 DE ABRIL', '14'),
+(97, 'K', 'K', '3EWNKMKF3K', '$2y$10$/ASnZ728rKSAEVK5QV50nOpkgOgLDRYH/lBtfmsyh04MSzjuRbge2', 'Masculino', '1era-federación', '10848360', '9 DE ABRIL', '2');
 
 --
 -- Índices para tablas volcadas
