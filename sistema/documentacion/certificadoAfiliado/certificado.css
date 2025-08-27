@@ -17,7 +17,8 @@ h1{
     font-weight: 800;
     background: rgba(255, 255, 255, 0.61);
     color: black;
-    border-radius: 9px;
+    border-radius: 15px;
+    padding: 3px;
 }
 label{
     font-weight: 700;
@@ -29,5 +30,5 @@ label{
 }
 
 input{
-    color: red;
+    color: rgb(255, 255, 255);
 }
